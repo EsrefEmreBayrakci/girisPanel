@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Anasayfa"
+        android:id="@+id/anasayfa"
+        android:icon="@drawable/homeicon"
+        />
+    <item android:title="Arama"
+        android:id="@+id/arama"
+        android:icon="@drawable/searchicon"/>
+    <item android:title="Hesabım"
+        android:id="@+id/hesabim"
+        android:icon="@drawable/personicon"/>
+</menu>

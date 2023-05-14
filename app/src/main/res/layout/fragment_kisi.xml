@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    >
+    <RelativeLayout
+        android:id="@+id/resim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape1">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/logo"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/resim"
+        android:layout_alignTop="@+id/resim"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="140dp"
+        android:src="@drawable/ho"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginRight="10dp"
+        android:text="HEPSİ ORADA"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+
+    <RelativeLayout
+        android:id="@+id/panelim"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/shape2">
+
+
+        <EditText
+            android:id="@+id/adi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:hint="Yeni Kullanıcı Adı"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:drawableRight="@drawable/baseline_person_24"/>
+        <EditText
+            android:id="@+id/sifre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:hint="Yeni Şifre"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:drawableRight="@drawable/baseline_key_24"/>
+
+        <Button
+            android:id="@+id/btnguncelle"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="130dp"
+            android:text="Güncelle"
+            android:textSize="20sp"
+            android:onClick="sqlprog"
+            android:background="@drawable/ripple2"
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/panelim1"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/shape2">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:text="KULLANICI BİLGİLERİ"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            />
+
+
+        <EditText
+            android:id="@+id/adi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:text="Eşref Emre"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:id="@+id/sifre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="18sp"
+            android:text="12345"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            />
+    </RelativeLayout>
+
+    </RelativeLayout>
